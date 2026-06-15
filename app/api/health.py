@@ -36,7 +36,7 @@ def _check_health() -> dict:
         "timestamp": datetime.now(timezone.utc).isoformat(),
     }
 
-
+ 
 @health_bp.route("/health", methods=["GET"])
 def health_ui():
     h = _check_health()
